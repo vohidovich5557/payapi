@@ -1,0 +1,104 @@
+.pay {
+    padding-top: 80px;
+}
+
+
+.pay__img {
+    max-width: 149px;
+    width: 100%;
+    fill: #213648;
+    filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.30));
+
+}
+
+
+.pay_picture {
+    gap: 29px;
+    display: flex;
+    margin-bottom: 48px;
+    max-width: 327px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pay__title {
+    color: #36536B;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'DM Serif Display';
+    line-height: 36px;
+    /* 100% */
+    letter-spacing: -0.277px;
+    margin-bottom: 24px;
+}
+
+.pay__text {
+    color: #6C8294;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    /* 186.667% */
+}
+
+.pay__info {
+    max-width: 328px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 765px) {
+    .pay_picture {
+        max-width: 573px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .pay__info {
+        max-width: 573px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .pay__title {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        /* 116.667% */
+        letter-spacing: -0.369px;
+    }
+
+    .pay__text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pay_container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pay__info {
+        max-width: 445px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .pay {
+        background-repeat: no-repeat;
+        background-position: right -60px;
+        background-image: url(../img/pay_bg.png);
+        background-size: 24%;
+    }
+
+}

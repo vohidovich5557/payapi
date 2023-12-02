@@ -1,0 +1,146 @@
+.footer {
+    margin-top: 80px;
+    background-size: cover;
+    background-color: #1B262F;
+    background-repeat: no-repeat;
+    background-image: url(../img/footer_bg.png);
+    background-position: center 184px;
+}
+
+.footer_container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_1 {
+    align-items: center;
+    text-align: center;
+}
+
+.footer__logo {
+    max-width: 135px;
+    width: 100%;
+    margin-top: 41px;
+    margin-bottom: 40px;
+}
+
+.footer__link {
+    color: #FBFCFE;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer__link:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.footer__list {
+    gap: 31px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+}
+
+.icon__img {
+    max-width: 24px;
+}
+
+.footer__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 31px;
+}
+
+.ready {
+    text-align: center;
+    padding-top: 96px;
+}
+
+.service__text {
+    color: #36536B;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'DM Serif Display';
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.246px;
+    margin-bottom: 32px;
+}
+
+
+@media screen and (min-width: 765px) {
+    .footer_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: row;
+        gap: 31px;
+        margin-bottom: 0;
+    }
+
+    .footer_1 {
+        display: flex;
+        gap: 64px;
+    }
+
+    .footer__icon {
+        padding-bottom: 0;
+    }
+
+    .service__text {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        /* 116.667% */
+        letter-spacing: -0.369px;
+    }
+
+    .footer {
+        background-image: url(../img/footer_bg_t.png);
+        background-position: 328px bottom;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .footer__link {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .footer_1 {
+        display: flex;
+        gap: 64px;
+    }
+
+    .ready {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .service__text {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        /* 116.667% */
+        letter-spacing: -0.369px;
+        white-space: nowrap;
+    }
+
+    .footer {
+        background-position: 900px bottom;
+    }
+}

@@ -1,0 +1,130 @@
+.service {
+    padding-top: 80px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 328px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_1 {
+    text-align: center;
+    max-width: 328px;
+    width: 100%;
+    margin-bottom: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_1__title {
+    color: #36536B;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    /* 138.889% */
+    letter-spacing: -0.138px;
+    margin-bottom: 16px;
+}
+
+.card_1::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/service_img1.svg);
+    max-width: 106px;
+    height: 106px;
+    width: 100%;
+    margin-bottom: 33px;
+}
+
+.card_1:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/service_img2.svg);
+    max-width: 106px;
+    height: 106px;
+    width: 100%;
+    margin-bottom: 33px;
+}
+
+.card_1:nth-child(3)::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/service_img3.svg);
+    max-width: 106px;
+    height: 106px;
+    width: 100%;
+    margin-bottom: 33px;
+}
+
+.card_1__text {
+    color: #6C8294;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    /* 166.667% */
+    letter-spacing: -0.115px;
+    max-width: 283px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media screen and (min-width: 765px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 689px;
+        gap: 10px;
+    }
+
+    .card_1__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        /* 138.889% */
+        letter-spacing: -0.138px;
+    }
+
+    .card_1__text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        /* 166.667% */
+        letter-spacing: -0.115px;
+        max-width: 202px;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1050px;
+        width: 100%;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_1 {
+        max-width: 291px;
+        width: 100%;
+    }
+
+    .card_1__text {
+        max-width: 350px;
+        width: 100%;
+    }
+}

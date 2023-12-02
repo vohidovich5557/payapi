@@ -1,0 +1,226 @@
+.hero {
+    padding-top: 32px;
+}
+
+.hero_container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__title {
+    max-width: 307px;
+    text-align: center;
+    color: #36536B;
+    font-family: DM Serif Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.246px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.hero__img {
+    margin-bottom: 24px;
+    max-width: 127px;
+    width: 100%;
+    height: 239px;
+    filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.30));
+}
+
+.input__email {
+    max-width: 327px;
+    width: 100%;
+    border-radius: 24px;
+    background-color: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border: none;
+    outline: #FBFCFE;
+    margin-bottom: 16px;
+    padding-left: 30px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
+
+.input__email::placeholder {
+    padding-left: 0;
+    padding-right: 158px;
+    color: #36536B;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.input__submit {
+    max-width: 327px;
+    width: 100%;
+    border-radius: 24px;
+    background-color: #BA4270;
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.115px;
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    padding-left: 50px;
+    padding-right: 48px;
+    transition: 0.4s;
+}
+
+.input__submit:hover {
+    background-color: #DA6D97;
+}
+
+.form {
+    margin-bottom: 24px;
+}
+
+.contact__info {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.contact__text {
+    color: #6C8294;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contact__button {
+    color: #6C8294;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 738px) {
+    .hero__title {
+        max-width: 522px;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        /* 116.667% */
+        letter-spacing: -0.369px;
+        margin-bottom: 22px;
+    }
+
+    .input__email {
+        max-width: 445px;
+        width: 100%;
+        height: 48px;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .input__email::placeholder {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .input__submit {
+        max-width: 173px;
+        width: 100%;
+        height: 48px;
+        flex-shrink: 0;
+        text-align: center;
+        padding-left: 35px;
+        transform: translateX(-173px);
+        padding-top: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.115px;
+    }
+
+    .form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 445px;
+        display: flex;
+    }
+
+    .contact__text {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .contact__button {
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero_container {
+        display: flex;
+        align-items: center;
+        gap: 221px;
+        flex-direction: row-reverse;
+    }
+
+    .hero__img {
+        max-width: 245px;
+        width: 100%;
+        height: 465px;
+    }
+
+    .hero {
+        padding-top: 74px;
+    }
+
+    .hero__title {
+        max-width: 546px;
+        color: #36536B;
+        font-family: DM Serif Display;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 72px;
+        /* 100% */
+        letter-spacing: -0.554px;
+        margin-bottom: 21px;
+        text-align: left;
+    }
+
+    .form {
+        text-align: left;
+        margin-left: 0;
+        width: 445px;
+        margin-bottom: 16px;
+    }
+
+    .contact__info {
+        justify-content: left;
+        margin-left: 30px;
+    }
+
+    .hero__info {
+        justify-content: left;
+    }
+
+    .input__email::placeholder {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .input__submit {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.115px;
+        padding-top: 14px;
+    }
+
+}
